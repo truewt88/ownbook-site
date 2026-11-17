@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — Ownbook</title>
+  <meta name="description" content="Everything Ownbook does: monthly budgeting, transactions, bank statement import, your nest (accounts, investments, debts and net worth), reports, and an Android app.">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <meta property="og:image" content="assets/brand/social-card.png">
+  <meta name="theme-color" content="#FBF1E1">
+
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/brand/mark-96.png" alt="" width="36" height="36">
+      <span>Ownbook</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"
+      onclick="var n=document.getElementById('site-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="features.html" aria-current="page">Features</a>
+      <a href="guide-start.html" >Guides</a>
+      <a href="philosophy.html" >Philosophy</a>
+      <a href="support.html" >Support</a>
+      <a class="btn btn-primary btn-sm" href="download.html" >Download</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:16px">
+    <div class="wrap">
+      <div class="eyebrow">Features</div>
+      <h1>Everything in one calm place.</h1>
+      <p class="lead">Budget, transactions, your nest (accounts, investments and debts) and reports, on Windows and Android. <span class="tag desk">Desktop</span> marks what lives on the computer only; everything else is on both. The phone isn't a shrunk desktop: it's built for a quick look on the go, and the deep digging stays on the big screen.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:16px">
+    <div class="wrap">
+
+      <div class="feature" id="budget">
+        <div>
+          <div class="eyebrow">Budget</div>
+          <h2>Plan with the money you have.</h2>
+          <ul>
+            <li><b>Ready to place</b>: money that comes in waits here until you give it a place. When nothing is left to place, every dollar has a job; what you don't spend carries into next month.</li>
+            <li><b>Placed, spent, left</b> for every category. Overspend one and the Budget shows what it costs the rest, so the numbers always add up.</li>
+            <li><b>Move money</b> between categories when plans change, on the computer or the phone.</li>
+            <li><b>Monthly targets</b> per category, and <b>savings goals</b> on the categories you already have: it says what to place each month to have it on time, warms as you save, hatches when it's all there, and spending it later is never shown as overspending.</li>
+            <li><b>Money age</b>: how long money sits before it's spent. Older is calmer.</li>
+            <li><b>Placed vs Spent</b> for your finished months, up to 24 at a time: what ran out, what your saving paid for, where spending left the plan, and a slide-out with each line's story <span class="tag desk">Desktop</span>, drag categories into your own order, and retire one-off categories (a trip, a wedding) once they're done.</li>
+          </ul>
+        </div>
+        <div class="media"><img src="assets/img/desk-budget.png" alt="Desktop Budget: Ready to place at the top, then each category's placed, spent and left" width="1440" height="900" loading="lazy"></div>
+      </div>
+
+      <div class="feature flip" id="transactions">
+        <div>
+          <div class="eyebrow">Transactions &amp; import</div>
+          <h2>Your bank's own statements, read for you.</h2>
+          <ul>
+            <li><b>Import CSV statements</b>, on the computer or the phone: each file is recognised by its columns and checked before anything is added: money in and out, rows that couldn't be read, and the balance column when there is one. Some banks' files work straight away, from layouts that come with the app; a new layout takes four quick questions, once.</li>
+            <li><b>Any other bank</b>: set up its layout once (the app suggests which column is which) and every statement like it is read by itself. On the phone that's four quick questions, one per screen. On the computer it can also suggest the layout with AI using your own API key (see <a href="philosophy.html#privacy">privacy</a>).</li>
+            <li><b>One button when there's nothing to check</b>: a statement read for sure, with every row already given a category, is added in one go. Otherwise you review just the rows that need it.</li>
+            <li><b>Review at your own pace</b>: rows already in Transactions are held back, categories come from how you tagged similar spends before, and the ones you pick can be remembered for next time. Start on one device and finish on the other: every pick carries over. Or take a whole import back out.</li>
+            <li><b>One month at a time</b>, on the computer as on the phone, with its In, Out and Net on top. Filters are chips you can see at a glance, and one chip takes you to whatever still needs a category.</li>
+            <li><b>Split</b> one payment across categories; search, filter and edit everything in place.</li>
+            <li><b>Transfers</b> between your own accounts are kept as transfers, never counted as spending.</li>
+            <li>On the phone, the <b>Add</b> button in the middle of the tab bar logs a spend, income or an investment in a few taps, or imports a statement.</li>
+          </ul>
+        </div>
+        <div class="media"><img src="assets/img/desk-transactions.png" alt="Desktop Transactions, grouped by day" width="1440" height="900" loading="lazy"></div>
+      </div>
+
+      <div class="feature" id="nest">
+        <div>
+          <div class="eyebrow">Your nest</div>
+          <h2>Everything you own, less what you owe.</h2>
+          <ul>
+            <li><b>Net worth</b> today and over time, for the last month, quarter, year or since you started.</li>
+            <li><b>How it changed, to the dollar</b>: how much you kept from what came in, how much your investments grew on their own, and what CPF or other retirement money added, each with its own card that adds up. Rest the pointer on a main figure (it has a faint dotted underline) and <b>How it's worked out</b> shows the sum; on the phone, tap <b>How it's worked out</b> under it. There is one savings rate everywhere: what you kept, of what came in.</li>
+            <li>Your money in plain groups: <b>Cash</b> for everyday spending, <b>Savings</b> saved for goals, <b>Investments</b>, money <b>locked away</b> (CPF, insurance cash value) and what you've <b>borrowed</b>.</li>
+            <li>Every account in one place, <b>Nest › Accounts</b>: Cash, Savings &amp; Investments, and What You Owe (cards and loans), with the group totals on top. Click an account to see its months, holdings and where its money comes in from, beside the list.</li>
+            <li><b>Your own groups of accounts</b>, like "Saving for a home": what they held, what you put in and what grew on its own, on the computer and the phone.</li>
+            <li><b>Nothing slips out unnoticed</b>: if a card, a transfer or a closed account leaves money out of your net worth, a golden <b>Things to check</b> pill at the top of the page lists it, each with a fix you can do right there. Leaving something out is always your choice, and it's listed.</li>
+          </ul>
+        </div>
+        <div class="media"><img src="assets/img/desk-nest.png" alt="Desktop Nest overview: net worth and how it changed, what you kept and where it sits" width="1440" height="900" loading="lazy"></div>
+      </div>
+
+      <div class="feature flip" id="investments">
+        <div>
+          <div class="eyebrow">Investments</div>
+          <h2>A portfolio view built from your trades.</h2>
+          <ul>
+            <li>Stocks, ETFs, options and currency exchanges, in any of 34 currencies, each holding priced from the market and every total shown in your home currency (asked when you start, and changeable in Settings) at that currency's own rate. One box adds them all, coins too, in four tabs: <b>Trade</b> (Bought, Sold, Swap, Option, Fee), <b>Earn</b> (Cash, or Shares or coins), <b>Transfer</b> (Money in, Money out, Moved) and <b>Adjust</b> (Correction). Plain fields, that day's close filled in, and <b>How it counts</b> shows what changes before you add it. Interest, bond coupons, bonuses and free shares count as money made; a platform fee as its cost.</li>
+            <li><b>Crypto</b>: coins at exchanges and in wallets, to 8 decimals. Buy, sell, <b>Reward</b> (staking or interest, counted as money made), <b>Move</b> between your own places (never a sale; the network fee is fewer coins) and <b>Swap</b> one coin for another. Each coin is valued at its USD price × that day's rate.</li>
+            <li>Your Investments figure shows what you hold by kind: <b>Stocks</b>, <b>Funds and ETFs</b>, <b>Crypto</b>, then <b>Cash in these accounts</b> and <b>Accounts with no trade records</b>.</li>
+            <li><b>How Your Investments Did</b> over any period: the gain on its own, apart from money you added, as a plain return and a money-weighted one (XIRR).</li>
+            <li><b>Count my eggs on bank, savings and card accounts</b>: type what the bank or card app shows, see the gap, and say what it is: interest, a fee, one dated balance adjustment (in or out of Ready to place, like YNAB's reconcile) or a wrong starting balance. If a later change stops a count matching, it's listed to check, never asked about while you type.</li>
+            <li><b>Count my eggs</b>: add what an account already holds without typing old trades (<i>add what you hold</i>), then later <i>match my broker</i>. Ownbook's units and cash are filled in, you change only what the broker shows differently, and pick what each difference was. Cash is the final check, and nothing is saved until everything is explained.</li>
+            <li><b>Typo finder</b>: when one trade's units were mistyped (a slipped decimal point, a wrong digit, Buy for Sell, a trade typed twice), the match points at it and offers the fix. No AI, just the trade's own figures.</li>
+            <li><b>Things to check</b>, in the same panel: points at the exact trade when units or costs don't add up, with a one-click fix, or "It's right". <b>Tidy up investment rows</b> offers older rows a clearer kind (a promotion saved as a coupon, free shares saved as money put in), after a backup and with Undo. Deposits are matched with the bank side and counted once, even when one transfer was split in two.</li>
+            <li><b>Import broker CSVs</b> <span class="tag desk">Desktop</span>: Interactive Brokers statements directly; Moomoo, Tiger, Syfe and others through a column mapping.</li>
+          </ul>
+        </div>
+        <div class="media"><img src="assets/img/desk-investments.png" alt="Desktop Investments: value, how your investments did, and the value over time" width="1440" height="900" loading="lazy"></div>
+      </div>
+
+      <div class="feature" id="debts">
+        <div>
+          <div class="eyebrow">Debts</div>
+          <h2>See the day you're debt-free.</h2>
+          <ul>
+            <li>Car loans, home loans, study loans, cards and money owed to family, each with its rate and monthly payment. What you owe comes off your net worth.</li>
+            <li>Credit cards follow their own transactions: spending is owed at once and the bill payment brings it back down. A bill paid from your bank that never reached the card's statement is caught, with one click to add it. A card left owing after its bill says <b>Carried since</b>, and can join the payoff plan.</li>
+            <li>Interest is added each month from the rate, so the balance stays close to your lender's.</li>
+            <li><b>Plan Your Payoff</b> <span class="tag desk">Desktop</span>: highest rate first or smallest first, add a little extra each month, and see your debt-free date and the interest still to pay. Free for everyone, and nothing changes until you pay it.</li>
+            <li>On the phone, a short card shows what you owe, the next payment and your debt-free month.</li>
+          </ul>
+        </div>
+        <div class="media"><img src="assets/img/desk-debts.png" alt="Desktop Debts: what you owe, next payment, and the payoff planner" width="1440" height="900" loading="lazy"></div>
+      </div>
+
+      <div class="feature flip" id="reports">
+        <div>
+          <div class="eyebrow">Reports</div>
+          <h2>Answers, not just charts.</h2>
+          <ul>
+            <li><b>Spent so far or left to spend</b> on the phone, and about how much a day. Switch between the two with a tap.</li>
+            <li><b>Spent and Kept</b>: of what came in, what you spent and what you kept, split into moved into your nest and stayed in cash accounts. The same figures and words on the phone and the computer.</li>
+            <li><b>This month against your usual</b>, by the same day of the month, <b>where it went</b> (each category a tap from its transactions), and <b>out of the ordinary</b>: new payees and bills bigger than their usual.</li>
+            <li><b>Trends</b>: spent and kept month by month, the months in figures, so far this year, your usual month, each category's last months, and how old your money is (with and without counting savings).</li>
+            <li>Income and savings, expenses, in vs out (every category, month by month) and your bank and card accounts over any range <span class="tag desk">Desktop</span>.</li>
+            <li><b>Point at any month</b> of a category to see how it compares, where it went and its largest payment, and click through to every payment <span class="tag desk">Desktop</span>.</li>
+          </ul>
+        </div>
+        <div class="media phones">
+          <img src="assets/img/phone-reports.png" alt="Phone Reports, leading with what you spent and kept this month" width="390" height="844" loading="lazy">
+          <img src="assets/img/phone-reports-left.png" alt="Phone Reports, leading with what's left to spend and about how much a day" width="390" height="844" loading="lazy">
+        </div>
+      </div>
+
+      <div class="feature" id="android">
+        <div>
+          <div class="eyebrow">Android</div>
+          <h2>A quick look, in your pocket.</h2>
+          <ul>
+            <li>Five tabs: <b>Budget</b>, <b>Nest</b>, <b>Add</b>, <b>Transactions</b> and <b>Reports</b>, designed for one hand rather than shrunk from the desktop.</li>
+            <li>Swipe the month bar to move between months; tap it to jump with month and year wheels.</li>
+            <li><b>Import a statement</b>: choose a CSV, or share one to Ownbook from your bank's app. Tap a row to give it a category; unfinished imports carry over to the computer and back.</li>
+            <li>Choose the screen it opens on: Budget, Reports, or wherever you left off.</li>
+            <li>Works fully offline; prices refresh when you're connected.</li>
+            <li>Reads the same data folder as the desktop through your own cloud sync. It never overwrites newer changes; a clash keeps both copies for you to choose.</li>
+          </ul>
+        </div>
+        <div class="media phones">
+          <img src="assets/img/phone-budget.png" alt="Phone Budget" width="390" height="844" loading="lazy">
+          <img src="assets/img/phone-nest.png" alt="Phone Nest: net worth and how it changed" width="390" height="844" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="data">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Your data</div>
+        <h2>Safe, portable, yours.</h2>
+      </div>
+      <div class="grid c3">
+        <div class="card"><h3>One folder</h3><p>A database and a few small files in a folder you choose. Move it, sync it, back it up like any other folder. Shared between computers, one edits at a time, and you're told when another computer's changes aren't arriving. If two computers changed things while apart, <b>Combine</b> keeps the work from both and asks only about what clashes.</p></div>
+        <div class="card"><h3>Automatic snapshots</h3><p>The desktop app keeps dated snapshots of your data and can restore any of them from Settings. Save everything as one backup file any time.</p></div>
+        <div class="card"><h3>Updates without fuss</h3><p>The desktop app checks for a new version when it opens and installs it with one click, keeping the old one to roll back to.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <strong style="color:var(--ink)">Ownbook</strong><br>
+      Free to use. Value for value. Your data stays yours.
+    </div>
+    <nav aria-label="Footer">
+      <a href="features.html">Features</a>
+      <a href="guide-start.html">Start here</a>
+      <a href="guide-desktop.html">Desktop guide</a>
+      <a href="guide-android.html">Android guide</a>
+      <a href="philosophy.html">Philosophy</a>
+      <a href="download.html">Download</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:support@useownbook.com">Report a problem</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <div style="width:100%">© 2026 Ownbook. Not affiliated with any bank, broker or other budgeting product. Contact: support@useownbook.com</div>
+  </div>
+</footer>
+
+</body>
+</html>

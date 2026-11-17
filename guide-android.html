@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Android guide — Ownbook</title>
+  <meta name="description" content="How to install Ownbook on Android, link it to the same data folder as your computer, and use it day to day.">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <meta property="og:image" content="assets/brand/social-card.png">
+  <meta name="theme-color" content="#FBF1E1">
+
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/brand/mark-96.png" alt="" width="36" height="36">
+      <span>Ownbook</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"
+      onclick="var n=document.getElementById('site-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="features.html" >Features</a>
+      <a href="guide-start.html" aria-current="page">Guides</a>
+      <a href="philosophy.html" >Philosophy</a>
+      <a href="support.html" >Support</a>
+      <a class="btn btn-primary btn-sm" href="download.html" >Download</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <aside class="toc">
+    <div class="tabs"><a href="guide-start.html">Start here</a><a href="guide-desktop.html">Desktop</a><a href="guide-android.html" aria-current="page">Android</a></div>
+    <strong>On this page</strong>
+    <a href="#before">Before you start</a>
+    <a href="#install">Install the app</a>
+    <a href="#start">Start a new book</a>
+    <a href="#folder">Get your folder on the phone</a>
+    <a href="#link">Link the app</a>
+    <a href="#tabs">The five tabs</a>
+    <a href="#import">Import a statement</a>
+    <a href="#settings">Choose how it opens</a>
+    <a href="#both">Phone and computer</a>
+    <a href="#prices">Investment prices</a>
+    <a href="#trouble">Troubleshooting</a>
+  </aside>
+  <article class="prose">
+    <div class="eyebrow">User guide · Android</div>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">Using Ownbook on your phone</h1>
+    <p class="lead">The Android app is a companion to the desktop app: it opens the same data folder, so your budget is the same wherever you look. The phone is for a quick look and quick entries; setting things up and digging deep happen on the computer.</p>
+
+    <h2 id="before">Before you start</h2>
+    <ul>
+      <li>Set up the <a href="guide-desktop.html">desktop app</a> first, with its data folder in a cloud folder (Google Drive, Dropbox or OneDrive) under <b>Settings › Data Folder</b>.</li>
+      <li>You'll need Android 7 or newer, and about 150 MB of free space.</li>
+    </ul>
+
+    <h2 id="install">1. Install the app</h2>
+    <ol>
+      <li>On the phone, open the <a href="download.html">download page</a> and download the Android app (an <code>.apk</code> file).</li>
+      <li>Open the file. If Android asks, allow your browser to <b>install unknown apps</b>, then tap <b>Install</b>.</li>
+      <li>Updating later works the same way: install the newer file over the old one and your data stays. Then just open the app; there is no need to force stop it. The launch screen shows the version it is opening, and <b>Updated to</b> that version the first time after an update.</li>
+      <li>Had a version before 0.1.123? That one installs as a separate app, because the app's id changed ahead of Google Play. Open the old app once so its last changes reach your folder, install the new one and link the same folder, then uninstall the old one.</li>
+    </ol>
+    <div class="note"><strong>Why not the Play Store?</strong>Not yet. For now the app is shared directly; the download page always has the latest version.</div>
+
+    <h2 id="start">2. Start a new book, or use your computer's</h2>
+    <p>The first screen offers three starts. You don't need a computer for the first.</p>
+    <ul>
+      <li><b>Start a new book</b>: the book is kept on this phone. Pick the currency <b>Your money is in</b>, then answer <b>What Do You Have Today?</b>: each bank account you spend from with its balance today, and each card with what you owe on it. <b>Ready to place</b> adds up as you type: your bank money less what the cards owe, and never below $0. Then <b>Where Do You Want to Start?</b>: <b>From Today</b>, or <b>With Past Statements Too</b> to bring in a statement first. Budget opens with <b>Your First Month</b>, six steps that tick themselves as you go.</li>
+      <li><b>Bring in a Backup</b>: a backup file saved from Ownbook on a computer (<b>Settings › Backups › Save a backup file</b>). Put it on the phone, tap <b>Bring in a Backup</b>, choose the file and tap <b>Bring it in</b>. The book is then kept on this phone, like a new one.</li>
+      <li><b>Use a Synced Folder</b>: you already keep your book on a computer in Google Drive, Dropbox or OneDrive. Follow steps 3 and 4 below.</li>
+    </ul>
+    <p>A book started on the phone says <b>Kept on this phone</b> under <b>Settings › Sync</b>. To keep a copy somewhere safe, which also lets a computer open it, tap <b>Keep a copy in a folder</b> and pick an <b>empty</b> folder that syncs with Google Drive, Dropbox or OneDrive. The phone's book is saved there, and from then on it syncs like any other. A folder that already holds a book is never written over.</p>
+
+    <h2 id="folder">3. Get your data folder onto the phone</h2>
+    <p>Only if you chose <b>Use a Synced Folder</b>. The app opens a real folder on the phone. Most cloud apps (Google Drive in particular) don't offer their folders to other apps, so a small sync app keeps a phone folder in step with the cloud:</p>
+    <ol>
+      <li>Install a two-way sync app such as <b>Autosync for Google Drive</b> or <b>FolderSync</b>.</li>
+      <li>Sign in with the same cloud account your computer uses.</li>
+      <li>Create one <b>two-way</b> folder pair: the cloud side is your data folder; the phone side is a new folder, for example <code>Documents/Ownbook Data</code>.</li>
+      <li>Turn on syncing when files change, then run the first sync. Check the phone folder now contains a <code>data</code> folder with <code>warehouse.db</code> inside.</li>
+    </ol>
+    <p class="muted">If your phone's folder picker does show your cloud folders with a working <b>Use this folder</b> button, you can pick the cloud folder directly and skip the sync app.</p>
+
+    <h2 id="link">4. Link the app</h2>
+    <ol>
+      <li>Open Ownbook and tap <b>Use a Synced Folder</b>.</li>
+      <li>Choose the phone folder from step 3: the one that <i>contains</i> <code>data</code> and <code>categories</code>, not the <code>data</code> folder itself.</li>
+      <li>Tap <b>Use this folder</b>, then <b>Allow</b>. The app copies your data in and opens on Budget.</li>
+      <li>Check a few balances against the computer.</li>
+    </ol>
+    <div class="note"><strong>Nothing is touched by mistake.</strong>If the folder you pick doesn't hold a budget, the app says so, shows what it found, and asks again. It never writes to a folder it hasn't loaded your data from.</div>
+
+    <h2 id="tabs">5. The five tabs</h2>
+    <figure class="phone"><img src="assets/img/phone-budget.png" alt="Budget on the phone" width="390" height="844" loading="lazy"><figcaption>Budget: Ready to place at the top, then each category with what's left.</figcaption></figure>
+    <ul>
+      <li><b>Budget</b>: Ready to place, with your money age under it, then your <b>Groups</b> in one card (with the month's total left beside the heading): each group with what's left and a line like <b>$1,540 spent of $3,400</b> with a thin bar in the group's colour (it turns red when a group is over). Groups whose money goes to your own savings, investment, insurance or CPF accounts say <b>$900 saved · $500 to go</b> instead, because that money is still yours. <b>Show empty categories</b> sits under the card. To change the order, hold a group until the phone buzzes, then drag it; in a group's summary, hold a category to move it within the group. Looking back at what you placed against what you spent, month by month, is <b>Placed vs Spent</b> on the desktop. Tap a group for its summary and its categories, each with what it spent and what's left; tap a category there to change what's placed or move money. A pooled group's sheet also lists what was spent in each category. A category with a savings goal shows its stage (<b>Warming · saving $1,350 of $3,000</b>); its sheet has the goal, <b>Place</b> for this month and <b>Change goal</b>, and <b>Set a savings goal</b> on any category. <b>Savings goals first</b> lists every goal at the top of Budget; tap one to open it. Swipe the month bar left or right to change month, or tap the month to jump with the month and year wheels.</li>
+      <li><b>Nest</b>: your net worth and how it changed (under it, when the prices are from, and <b>Refresh</b> to fetch new ones), then a card for each reason it changed, in the same order (tap a reason under your net worth to jump to its card): <b>Kept From What Came In</b>: what came in less what went out, the same savings rate as Reports (<b>How it's worked out</b> under it shows the sum); <b>Investments grew on their own</b>, from what your broker accounts held at the start, plus what you put in, to today, with your biggest holdings, <b>All holdings and how they did</b> and <b>Count my eggs</b>; and <b>CPF added on its own</b>, split into your pay, interest, your home and the rest. Under <b>Where It Sits</b>, each group (<b>Cash</b>, <b>Savings &amp; Investments</b>, <b>What You Owe</b>) is one line with its total, its change and how many accounts it has; tap a group to open it, and tap again to fold it. Anything that opens right there points down or says <b>Show</b>; places that take you to another page sit together at the end of a group or an account, each with a ›. <b>Change these accounts in Settings</b> at the end of a group goes to where accounts are set up. A credit card left owing after its bill says <b>Carried since</b> the month it started. The phone remembers which groups you leave open. Inside, each account is one line; a second line shows only when something needs you, like a count that's due or a debt's terms. Tap an account for its change over the period, what it holds (holdings at today's prices, cash, and what you put in, one line each), its last 12 months, and its settings. Closed accounts with nothing left in them aren't shown. Under your net worth, <b>things to check</b> shows only when some money isn't counted: a card or bank whose transactions aren't in your Nest, a transfer that went nowhere, card bills missing from a card, a closed account with money left (not a closed investment account whose trades sold everything: what didn't come back is its gain or loss), or a bank, savings or cash account that went below zero, open or closed (money came in that isn't recorded, most often interest). Tap it for the list; each has its fix (<b>Add it as interest</b> adds one Interest row for how far below it went; <b>It was wrong from the start</b> raises its starting balance; <b>It really was overdrawn</b> unflags it, listed under <b>Your choices</b> with <b>Check it again</b>; <b>Set up as a credit card</b> asks what you owe on it today; <b>It's a bank account</b> asks its balance today; <b>Don't keep a balance for it</b> leaves it out on purpose, and <b>Track it again</b> undoes that). <b>How they did and what you hold</b> opens your investments; under today's figure it says when the prices are from, and <b>Refresh</b> fetches new ones. After those cards, groups of accounts you made on the computer show under <b>Your Groups</b>, each with its worth, what you put in and what grew on its own; tap one for its chart and figures.</li>
+      <li><b>Add</b>, the round button in the middle: log <b>Spending or income</b>, an <b>Investment</b> or <b>Crypto</b> (both open <b>Add an investment</b>, for shares, funds and coins alike: pick a tab, <b>Trade</b>, <b>Earn</b>, <b>Transfer</b> or <b>Adjust</b>, then what happened from the line of words under it, like <b>Bought · Sold · Swap · Option · Fee</b>. That day's close fills in; in a <b>Swap</b> type any two of the amounts and the rate and the third is worked out. For <b>Earn › Cash</b>, tap <b>Paid on</b>: <b>What Paid You?</b> lists what you hold there, grouped by how it will be saved (Dividend, Bond coupon, Interest, Bonus or promotion), and the box shows <b>Saved as</b>. <b>Add</b> stays at the bottom, with <b>How it counts</b> in one line above it, such as <b>Paid US$1,800 for 10 AAPL</b>; <b>See all</b> shows every figure), or <b>Import a statement</b> (see <a href="#import">step 6</a>).</li>
+      <li><b>Transactions</b>: this month's <b>In</b>, <b>Out</b> and <b>Net</b> side by side, then the spending and income, grouped by day with each day's total (like <b>$85 spent</b>); the switch at the top shows your <b>Investments</b> trades instead. Tap a row to edit or split it.</li>
+      <li><b>Reports</b>: <b>This Month</b> leads with <b>Spent and Kept</b>: of what came in, what you spent and what you kept, with kept split into <b>Moved into your nest</b> and <b>Stayed in cash accounts</b> (money in categories kept out of Spent shows as <b>Other money out</b>), and how that compares with what you usually keep. The computer's Reports Summary says the same figures in the same words. Then the spending card with its <b>Spent · Left</b> switch: what you've spent so far against your usual, or what's left to spend and about how much a day. Then <b>Where It Went</b> (biggest category first, each against its usual), <b>Where Your Savings Went</b> and <b>Out of the Ordinary</b>: new payees and bills bigger than their usual, with why each is there. <b>Trends</b> leads with <b>Spent and Kept, Month by Month</b> (the share kept above each month), then <b>The Months in Figures</b> (came in, spent and kept for each month, and a month on average), <b>So Far This Year</b>, your usual month, each category's last months (with only this month so far, it shows this month "so far"), and <b>How Old Your Money Is</b>: your money age, and again counting savings as still yours. Reports counts transactions up to today. Balance adjustments from Count my eggs aren't spending: Spent and kept says how much there was this month on its own line, with <b>See them</b>. Comparisons say what changed, for example <b>Spent $4,212 more than usual by this point</b> (red) or <b>Spent $1,300 less than usual</b> (green); a category where refunds beat spending shows as money <b>back</b>.</li>
+    </ul>
+    <figure class="phone"><img src="assets/img/phone-reports-left.png" alt="Reports on the phone, leading with what's left to spend" width="390" height="844" loading="lazy"><figcaption>Reports, set to Left: what's left this month and about how much a day.</figcaption></figure>
+    <p>Accounts are added and changed in <b>Settings</b> on the phone. Loans, the payoff planner and backups stay on the computer; they show up on the phone after the next sync.</p>
+
+    <h2 id="import">6. Import a statement</h2>
+    <p>Most banks let you export a statement as a CSV file. There are two ways to bring one in:</p>
+    <ul>
+      <li>Tap <b>Add</b>, then <b>Import a statement</b>, then <b>Choose files</b>, and pick the CSV (from Downloads, Drive or wherever it is).</li>
+      <li>Or, in your bank's app, Gmail or Files, <b>Share</b> the CSV and pick Ownbook. It opens and reads the file straight away.</li>
+    </ul>
+    <p>Each file becomes one card with its money out, money in and what was checked. A row that couldn't be read is listed there by line number, never left out quietly. If two of your layouts fit a file, it asks <b>Which account is this?</b> A card statement missing a bill payment you made from the bank says so in the review, with <b>Add it to</b> the card. Then:</p>
+    <ul>
+      <li>If every row already has a category, tap <b>Add</b> on the card and you're done.</li>
+      <li>Otherwise tap <b>Review</b>. Tap a row to give it a category (or, for money moved between your own accounts, the account it went to). Each pick is saved as you make it, and carries over to the computer. To give several rows the same category, tap <b>Select</b> (or press and hold a row), tick the rows, then <b>Give a category</b> or <b>Leave out</b>; <b>Done</b> at the top ends selecting. In the list, a bank's long reference numbers are left off; tap the row to see its full text. To split a row across categories, add it, then use <b>Split</b> on it in Transactions. The bar at the top stays while you scroll: to stop halfway, tap the back arrow (or Android's Back) and the import waits on the Import page with your picks saved. To drop the rest, tap <b>Set aside</b> at the top right twice: rows already added stay in Transactions. Picking a category doesn't add a row yet: the <b>Add</b> button floating at the bottom right does, and says how many are ready, such as <b>Add 12 of 35</b>. Under <b>Left out</b>, <b>Put all back</b> returns every left-out row with its category. Under <b>Recent Imports</b>, each finished import shows the account it went into, how many rows were added and left out, and when. Tap it to open it again, or tap <b>⋯</b> for <b>Take its transactions back out</b> (they leave Transactions and the rows go back to review) or <b>Remove from this list</b> (the import goes from the phone and the computer; the transactions it added stay). Both take two taps.</li>
+      <li>Rows that look <b>already in Transactions</b> are held back. Open one to <b>Add it anyway</b> if it really happened twice.</li>
+      <li><b>Guessed</b> shows only the rows Ownbook filled in, to check them quickly. Tap <b>Add</b> when you're ready. Your first import asks once whether to <b>remember the categories you pick</b>, so next time those shops get the same category by themselves; change it any time in <b>Settings › Imports</b>. The computer follows the same choice.</li>
+    </ul>
+    <figure class="phone"><img src="assets/img/phone-import-review.png" alt="Reviewing an imported card statement on the phone" width="390" height="844" loading="lazy"><figcaption>An import's review: tap a row to pick its category.</figcaption></figure>
+    <p><b>A file Ownbook already knows</b> needs no setup. For some, it asks once which account the rows go into, then reads files like it by themselves.</p>
+    <p><b>A bank Ownbook hasn't seen yet</b> asks four quick questions, one per screen: which column has the date, how amounts are shown, which column says what it was, and which account it goes into. Each starts on Ownbook's guess. Then it shows the totals and the first rows to check before saving; after that, files like it are read by themselves.</p>
+    <p><b>A statement from a new card or bank</b>: once its rows are added, the review asks where its money lives (a credit card, a bank account, part of one you have, or don't keep a balance). <b>Ask me later</b> keeps the question on the Nest until you answer it.</p>
+    <p><b>Unfinished imports carry over.</b> Start a review on the phone and finish it on the computer, or the other way round; the picks from both are kept. Until it's done, an import also shows as <b>Unfinished Imports</b> at the top of Transactions. Picks reach the other device when the files sync, as in <a href="#both">step 8</a>.</p>
+
+    <h2 id="settings">7. Choose how it opens</h2>
+    <p>Tap the gear at the top right of any tab for <b>Settings</b>. A dot on the gear means something there needs a look:</p>
+    <ul>
+      <li><b>Home currency</b> (first under <b>Your Money</b>; tap <b>Change</b>): the currency every total is shown in. <b>Most Used</b> come first, then all 34; search by code, name or country, and each shows how an amount will look (£1,234). Before it changes, the app says what happens: investments, broker cash and net worth are converted at today's rate; bank transactions, budgets and goals keep their numbers and only change sign (<b>$1,200 rent shows as £1,200</b>). A backup is made first, and you can change it back. Other currencies are always marked so they can't be mistaken for it: US$, S$, HK$, or the code (EUR, JPY).</li>
+      <li><b>Accounts</b> (also under <b>Your Money</b>): every account in the same three groups as the Nest, each saying where its money comes in from. Tap one to change it, close it or delete it (<b>Rename</b> next to a name changes it on every transaction that carries it); <b>+ Add an account</b> asks what kind it is (bank or wallet, savings, investments, CPF &amp; retirement, insurance, credit card), then its name, the names its transactions carry, and its balance today. Transactions that don't belong to an account yet are listed at the top, each with its fix. Loans are set up on the computer, with their payoff plan.</li>
+      <li><b>Needs a Look</b> shows only when your sync service kept a spare copy of a data file (for example when two devices saved at once). Ownbook keeps using the original. <b>What's in it?</b> says how many rows each has; <b>Move to backups</b> puts the copy in your backups folder, so nothing is lost and the dot goes away.</li>
+      <li><b>Open the App On</b>: Budget, Reports, or <b>Where I left off</b> (the last tab you used, investment trades included, if it was within the hour).</li>
+      <li><b>Reports Opens On</b>: This month, or the tab you used last.</li>
+      <li><b>Sync</b>: whether the phone is <b>Up to date</b> (and when it last checked), the <b>Last change</b> and which device made it, and the folder your data lives in (for example <i>Google Drive › Ownbook</i>). The app checks the folder when you open it and every 15 seconds while it's open; <b>Check now</b> does it straight away. <b>Sync details</b> lists the last few times newer data came in: when it was saved, and how long it took to arrive and what it waited on (the folder not passing it on yet, or the app's next check). An update that came in when you opened the app just says so. <b>Use a different folder</b>, also in Sync details, switches folders without closing the app (it's read first, never written over).</li>
+    </ul>
+
+    <h2 id="both">8. Using the phone and the computer</h2>
+    <p>Use one device at a time, and let the files sync in between:</p>
+    <ul>
+      <li><b>Phone after computer</b>: once your computer's cloud app has uploaded, the phone brings the new data in by itself, even if the app was left open. The page you're on refreshes where it was and says <b>Updated with your computer's changes</b>. If you're in the middle of something (typing, or a sheet is open), it waits until you're done.</li>
+      <li><b>Computer after phone</b>: the phone sends each change to the folder a few seconds after you make it. Once the computer's cloud app has it, the desktop page refreshes by itself and says <b>Updated with changes from your other device</b>.</li>
+    </ul>
+    <p>One device changes things at a time, the same as between two computers. While Ownbook is open on your computer, the phone is <b>view only</b>, shown in one line at the top (<b>View only · open on …</b>): you can look around, and <b>Edit here</b> moves editing to the phone (the computer goes view only once the folder passes the news on). If the computer says Ownbook is open but nothing from it has arrived for 10 minutes or more, the phone asks what to do, as the computer does (<b>View only for now</b>, <b>Edit anyway</b>, or <b>… is closed</b> if it shut down without closing Ownbook).</p>
+    <p>If both sides changed in between anyway, nothing is overwritten: the phone keeps its copy in your data folder for the computer, shows the computer's copy, and says <b>This phone and … both changed things</b>. Next time Ownbook opens on the computer it offers to <b>Combine</b> them, and asks only about things changed differently on each. The same happens if a change the phone sent is replaced in the folder by a copy that never had it. If the phone's copy turns out to match the folder's, the computer settles it without asking.</p>
+    <p>Cloud apps don't always bring a save's files all at once. When only part of the computer's latest changes has reached the folder, the phone keeps showing what it had, and <b>Settings</b> says <b>Some of …'s latest changes are still arriving in the folder</b>. Changes you make meanwhile wait on the phone; it brings the computer's in, and sends yours, once the rest arrives.</p>
+    <div class="note"><strong>Try it once (5 minutes)</strong>Add a $1 "Sync test" spend on the phone and close the app. Open the desktop app: it's on Transactions. Delete it there, close the app, let it sync, and open the phone app: it's gone there too.</div>
+
+    <h2 id="prices">9. Investment prices</h2>
+    <p>The phone shows your last saved prices straight away, then fetches new ones in the background when you're connected and says when they're from. Offline, it shows the last prices it or your computer fetched.</p>
+    <p><b>Things to check</b>, at the end of the Investments sheet on <b>Nest</b>, shows only when something is open. <b>Tidy up investment rows</b> there offers rows saved before the add box had a kind for them a clearer one (a promotion saved as a bond coupon, free shares counted as money put in): tap <b>Review</b>, untick any to leave, then <b>Apply</b>. A backup is made first, and <b>Undo</b> puts them back. It also lists a deposit the bank side doesn't have, or a bank transfer the broker's records don't, since each deposit is matched with the bank side and counted once; <b>Add it on the broker side</b> records the matching Money in or out for it. If the check can't run, it says <b>Couldn't check your investments</b> instead of showing nothing.</p>
+    <p><b>Count my eggs</b> on a bank, savings or card account: on <b>Nest</b>, open <b>Cash</b> or <b>What You Owe</b> and tap <b>Count my eggs</b>, then the account. Type what your bank app shows (for a card, what you owe) and the day. If it differs, Ownbook lists what it can find, then asks what the rest is: interest, a fee or charge (or a refund), <b>Just match it</b> (one dated <b>Balance adjustment</b>, in or out of Ready to place, neither spending nor income), or <b>It was wrong from the start</b> (the starting balance changes instead). Later changes that stop a count matching are listed under <b>things to check</b>, never asked about while you type: <b>Take the adjustment out</b> when a change explains it, otherwise <b>Adjust by</b> the difference, <b>Count again</b> or <b>Leave it</b>.</p>
+    <p><b>Count my eggs</b>: on <b>Nest</b>, the Savings &amp; investments group says how many things are open (<b>2 to check</b>) while folded; open it and tap <b>2 things to check</b> to see them in the Investments sheet. A count due is one of them, one line per account: <b>a match is waiting</b>, <b>holds nothing yet</b>, or not matched with the broker in over a year (<b>Not now</b> hides that one for 3 months). A trade that doesn't add up also offers <b>Match with the broker</b>. Every open investment account's sheet has a <b>Count my eggs</b> button too, so you can count one any time; it's dark when a count is due. The account's sheet also has <b>Uses a category</b>: on for savings and investments you fund from a budget category, off for everyday accounts like your bank. On an account with no trades, <b>add what you hold</b>: one line per holding with its units, the price that day filled in, and the cash. Pick <b>Coin</b> for crypto, and set <b>Counted on</b> for an earlier day. An account with only a balance is counted once with <b>Replace the balance and save</b> (a backup is taken first). Later, <b>match my broker</b>: Ownbook's figures are filled in, change what differs, then go through each difference on its own screen, cash last, and <b>Save all</b>. When Ownbook can tell the reason (a coin's reward, network fees), it comes picked, with why; <b>Something else</b> shows the rest. Type 0 for a holding the broker no longer has (an empty box isn't read as none). <b>Things to check</b> appears in your investments when a trade doesn't add up.</p>
+
+    <h2 id="trouble">Troubleshooting</h2>
+    <ul>
+      <li><b>"Can't see any files" when picking a folder</b>: you probably picked a cloud folder directly; use the sync-app folder from step 3.</li>
+      <li><b>"Looks like the data folder itself"</b>: pick the folder one level up.</li>
+      <li><b>Linked the wrong folder?</b> Android <b>Settings › Apps › Ownbook › Storage › Clear storage</b>, or uninstall and reinstall. That only clears the phone's own copy, never your cloud folder.</li>
+      <li>Still stuck? <a href="mailto:support@useownbook.com">Report it here</a>.</li>
+    </ul>
+  </article>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <strong style="color:var(--ink)">Ownbook</strong><br>
+      Free to use. Value for value. Your data stays yours.
+    </div>
+    <nav aria-label="Footer">
+      <a href="features.html">Features</a>
+      <a href="guide-start.html">Start here</a>
+      <a href="guide-desktop.html">Desktop guide</a>
+      <a href="guide-android.html">Android guide</a>
+      <a href="philosophy.html">Philosophy</a>
+      <a href="download.html">Download</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:support@useownbook.com">Report a problem</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <div style="width:100%">© 2026 Ownbook. Not affiliated with any bank, broker or other budgeting product. Contact: support@useownbook.com</div>
+  </div>
+</footer>
+
+</body>
+</html>

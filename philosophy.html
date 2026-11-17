@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Philosophy — Ownbook</title>
+  <meta name="description" content="Why Ownbook exists: your money and your data should be yours, a budget should work with money you have, and software can be paid for by value, not subscriptions.">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <meta property="og:image" content="assets/brand/social-card.png">
+  <meta name="theme-color" content="#FBF1E1">
+
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/brand/mark-96.png" alt="" width="36" height="36">
+      <span>Ownbook</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"
+      onclick="var n=document.getElementById('site-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="features.html" >Features</a>
+      <a href="guide-start.html" >Guides</a>
+      <a href="philosophy.html" aria-current="page">Philosophy</a>
+      <a href="support.html" >Support</a>
+      <a class="btn btn-primary btn-sm" href="download.html" >Download</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <aside class="toc">
+    <strong>Philosophy</strong>
+    <a href="#why">Why it exists</a>
+    <a href="#yours">Your data is yours</a>
+    <a href="#have">Budget what you have</a>
+    <a href="#honest">Numbers that add up</a>
+    <a href="#calm">Calm, not clever</a>
+    <a href="#v4v">Value for value</a>
+    <a href="#privacy">What leaves your computer</a>
+  </aside>
+  <article class="prose">
+    <div class="eyebrow">Philosophy</div>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.6rem)">Money is personal. The software should be too.</h1>
+    <p class="lead">A few beliefs shape every decision in Ownbook: what it does, what it refuses to do, and how it's paid for.</p>
+
+    <h2 id="why">Why it exists</h2>
+    <p>Ownbook started as one person's tool. The budgeting apps worth using had moved to subscriptions, wanted a login to every bank, and kept your financial life on their servers. The spreadsheets that replaced them got slower and more fragile every year.</p>
+    <p>So this was built instead: a proper budgeting app that runs on your own computer, reads the statements your bank already gives you, and keeps everything in a folder you control. It's now shared in the hope it's useful to you too.</p>
+
+    <h2 id="yours">Your data is yours</h2>
+    <p>Your transactions, balances and plans live in one folder: a database file and a few small settings files. There's no account to create, no server of ours to trust, and nothing to lose if this project ever stops. You can move the folder, back it up, sync it through your own Google Drive or Dropbox, or delete it.</p>
+    <p>The app never asks for your bank password. You bring in the CSV statements your bank provides, and nothing else gets near your accounts.</p>
+
+    <h2 id="have">Budget the money you have</h2>
+    <p>A budget built on next month's paycheque is a wish. Ownbook only lets you plan money that has actually arrived: you assign it to categories until none is left unplanned, and when something runs over, you decide where the money comes from. Over time you end up spending last month's income instead of waiting for the next one.</p>
+    <p>Most of us didn't need more charts. We needed to see each month clearly and make a decision.</p>
+    <p><b>Count the eggs you have, not the ones you hope for.</b> That's the whole idea behind the Budget: money that's arrived waits until you give it a place.</p>
+
+    <h2 id="honest">Numbers that add up</h2>
+    <p>Every figure should be one you could check by hand. Overspending comes out of something visible. Investment accounts are valued at holdings plus cash, the same number your broker shows. When something doesn't add up, a missing trade or a typo, the app points at the exact row instead of quietly rounding it away.</p>
+    <p>The checks are plain rules written into the app, not guesses. The same data always gives the same answer.</p>
+
+    <h2 id="calm">Calm, not clever</h2>
+    <p>No streaks, badges or notifications designed to bring you back. No ads, no upsells, no "insights" written to make you feel bad. The app should be quiet, fast and readable, something you open for five minutes, understand, and close.</p>
+
+    <h2 id="v4v">Value for value</h2>
+    <p>Ownbook is free to download and use, in full. Everything in it today stays free: no trials, no ads, and nothing you use now will ever be locked away later.</p>
+    <p>To be straight with you about the future: some new, advanced tools may one day be an optional paid add-on. If that happens, it will be clearly marked, it will never touch your data or the features you already have, and the everyday app will stay free.</p>
+    <p>If it gives you something of value, more clarity or less stress or one good decision, you're invited to give back what it's worth to you. Money keeps the work going, but so does time and talent: reporting a bug, suggesting a bank to support, or telling a friend.</p>
+    <p>This only works if it's genuinely voluntary, so it will stay that way. <a href="support.html">Ways to give back</a>.</p>
+
+    <h2 id="privacy">What leaves your computer</h2>
+    <p>Here is everything the app sends over the internet, and nothing else. There's no analytics, telemetry or tracking.</p>
+    <div class="table-scroll">
+    <table class="facts">
+      <thead><tr><th>What</th><th>Sent where</th><th>When</th></tr></thead>
+      <tbody>
+        <tr><td>Ticker symbols (e.g. <code>VWRA.L</code>) and the exchange rate request for each currency you hold (e.g. USD/SGD)</td><td>Yahoo Finance</td><td>When you have investments, to show current and past prices. No amounts or account details.</td></tr>
+        <tr><td>An update check</td><td>GitHub, where the app is published</td><td>When the desktop app opens. Only asks "is there a newer version?"</td></tr>
+        <tr><td>A few sample rows of one CSV file</td><td>Anthropic (Claude), with <i>your own</i> API key</td><td>Only if you add a key and ask the import layout builder to suggest one. Off unless you turn it on.</td></tr>
+        <tr><td>Your data folder</td><td>Your own cloud provider, if you put it there</td><td>Handled by Google Drive / Dropbox / OneDrive, not by the app.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>This website doesn't track you either: no cookies, no analytics, no third-party fonts or scripts. It's served by GitHub Pages, which keeps its own standard server logs.</p>
+  </article>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <strong style="color:var(--ink)">Ownbook</strong><br>
+      Free to use. Value for value. Your data stays yours.
+    </div>
+    <nav aria-label="Footer">
+      <a href="features.html">Features</a>
+      <a href="guide-start.html">Start here</a>
+      <a href="guide-desktop.html">Desktop guide</a>
+      <a href="guide-android.html">Android guide</a>
+      <a href="philosophy.html">Philosophy</a>
+      <a href="download.html">Download</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:support@useownbook.com">Report a problem</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <div style="width:100%">© 2026 Ownbook. Not affiliated with any bank, broker or other budgeting product. Contact: support@useownbook.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
