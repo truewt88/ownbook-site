@@ -57,7 +57,7 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-underline-offset: 3px; }
 p a, li a, td a { color: var(--link); font-weight: 700; }
-h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; letter-spacing: -.005em; margin: 0 0 .5em; color: var(--cocoa); }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; line-height: 1.15; letter-spacing: -.005em; margin: 0 0 .5em; color: var(--cocoa); }
 h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 600; }
 h2 { font-size: clamp(1.6rem, 3.2vw, 2.25rem); font-weight: 600; }
 h3 { font-size: 1.2rem; font-weight: 600; }
@@ -111,16 +111,19 @@ section.tight { padding: 48px 0; }
 /* Hero */
 .hero { padding: 64px 0 40px; }
 .hero-grid { display: grid; gap: 40px; align-items: center; }
-@media (min-width: 960px) { .hero-grid { grid-template-columns: 1.05fr 1fr; } }
+.hero-copy { max-width: 820px; margin: 0 auto; text-align: center; }
+.hero-copy .lead { margin-left: auto; margin-right: auto; max-width: 660px; }
+.hero-copy .btn-row { justify-content: center; }
+.hero .shots { margin-top: 24px; }
 .hero h1 span { color: var(--clay); }
 .hero-note { margin-top: 18px; font-size: .9rem; color: var(--muted); }
 .shots { position: relative; min-height: 360px; }
-.shot-desk { border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); background: var(--surface); }
-.shot-desk .bar { height: 26px; display: flex; gap: 6px; align-items: center; padding: 0 12px; border-bottom: 1px solid var(--line); }
-.shot-desk .bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
-.shot-phone { position: absolute; right: -6px; bottom: -28px; width: 34%; max-width: 210px; border-radius: 26px; overflow: hidden;
+.shot-desk { margin-left: 13%; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); background: var(--surface); }
+.shot-desk img { display: block; }
+/* phone at bottom-left, over the sidebar and category names, so Placed / Spent / Left stay in view */
+.shot-phone { position: absolute; left: 0; bottom: -36px; width: 21%; max-width: 230px; border-radius: 26px; overflow: hidden;
   border: 6px solid var(--frame); box-shadow: 0 20px 40px rgba(46, 22, 11, .25); background: #fff; }
-@media (max-width: 600px) { .shot-phone { width: 40%; right: 0; } }
+@media (max-width: 600px) { .shot-desk { margin-left: 12%; } .shot-phone { width: 34%; } }
 
 /* Pillars / cards */
 .grid { display: grid; gap: 20px; }
@@ -137,6 +140,34 @@ section.tight { padding: 48px 0; }
 .feature { display: grid; gap: 32px; align-items: center; padding: 40px 0; border-top: 1px solid var(--line); }
 .feature:first-of-type { border-top: 0; }
 @media (min-width: 900px) { .feature { grid-template-columns: 1fr 1.25fr; } .feature.flip > :first-child { order: 2; } }
+/* a desktop shot gets the full width: text on top, the screen below at near its real size */
+.feature.wide { grid-template-columns: 1fr; }
+.feature.wide.flip > :first-child { order: 0; }
+@media (min-width: 900px) { .feature.wide > :first-child { display: grid; grid-template-columns: 1fr 1.4fr; column-gap: 48px; align-items: start; }
+  .feature.wide > :first-child > :is(ul, .btn-row, p) { grid-column: 2; } .feature.wide > :first-child > :is(.eyebrow, h2) { grid-column: 1; }
+  .feature.wide > :first-child > ul { grid-row: 1 / span 3; margin-top: 0; } }
+/* landing chapters: centred heading, the screen full width, one link under it */
+.chapter { padding: 88px 0; }
+.home .section-head, #data .section-head { margin-left: auto; margin-right: auto; text-align: center; }
+.home .steps .step { text-align: center; } .home .steps .step::before { left: 50%; transform: translateX(-50%); }
+.chapter-head { max-width: 720px; margin: 0 auto 40px; text-align: center; }
+.chapter-head .lead { margin-left: auto; margin-right: auto; }
+.chapter-foot { margin-top: 32px; text-align: center; }
+.shot-wide { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--surface); }
+.shot-wide img { display: block; }
+.phone-row { display: grid; grid-template-columns: repeat(3, minmax(0, 270px)); justify-content: center; gap: 28px; }
+.phone-row img { border-radius: 26px; border: 6px solid var(--frame); box-shadow: 0 20px 40px rgba(46, 22, 11, .25); }
+@media (max-width: 700px) { .phone-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } .phone-row img:nth-child(3) { display: none; } .chapter { padding: 56px 0; } }
+/* features page: jump links, points as short cards */
+.jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding-block: 8px 0; }
+.jump a { padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); font-weight: 700; font-size: .92rem; text-decoration: none; }
+.jump a:hover { color: var(--ink); border-color: var(--clay); }
+.points { list-style: none; padding: 0; margin: 40px 0 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+.points li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+.band .points li { background: var(--bg); }
+.points h3 { font-size: 1.08rem; margin: 0 0 6px; }
+.points p { margin: 0; color: var(--ink-2); font-size: .98rem; line-height: 1.55; }
+.chapter[id] { scroll-margin-top: 64px; }
 .feature ul { padding-left: 1.1em; margin: 12px 0 0; color: var(--ink-2); }
 .feature li { margin: 6px 0; }
 .feature .media { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--surface); }
