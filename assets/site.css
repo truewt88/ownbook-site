@@ -78,7 +78,7 @@ code, kbd { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; fon
 .nav { display: flex; gap: 4px; margin-left: auto; align-items: center; }
 .nav a { text-decoration: none; font-size: .93rem; font-weight: 600; color: var(--ink-2); padding: 8px 12px; border-radius: 999px; }
 .nav a:hover { background: var(--surface); }
-.nav a[aria-current="page"] { color: var(--ink); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
+.nav a[aria-current="page"]:not(.btn) { color: var(--ink); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
 .nav .btn { margin-left: 6px; }
 .nav-toggle { display: none; margin-left: auto; background: none; border: 0; padding: 10px; color: var(--ink); cursor: pointer; }
 .nav-toggle svg { width: 24px; height: 24px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; }
@@ -227,7 +227,8 @@ table.facts th { font-size: .78rem; text-transform: uppercase; letter-spacing: .
 @media (min-width: 820px) { .dl { grid-template-columns: repeat(2, 1fr); } }
 .dl .card { display: flex; flex-direction: column; gap: 10px; }
 .dl .card .btn { align-self: flex-start; margin-top: 8px; }
-.dl ul { margin: 6px 0 0; padding-left: 1.1em; color: var(--ink-2); font-size: .95rem; }
+.dl ul, .dl ol { margin: 6px 0 0; padding-left: 1.1em; color: var(--ink-2); font-size: .95rem; }
+.dl ol li + li { margin-top: 4px; }
 .give { display: grid; gap: 20px; }
 @media (min-width: 820px) { .give { grid-template-columns: repeat(2, 1fr); } }
 .ln { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
